@@ -1,2 +1,7 @@
 <h1>Posts#:index</h1>
-<p>Find me in app/views/posts/:index.html.erb</p>
+<ul>
+<% array_posts = @posts.each do |post| %>
+  <li><%= post.title %></li>
+<% end %>
+</ul>
+<%= link_to "Create New", new_post_path %>
