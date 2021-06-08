@@ -14,11 +14,12 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts =Post.all
+    @posts = Post.all
   end
 
-  private 
-   def post_params 
+  private
+
+  def post_params
     params.require(:post).permit(:title, :body).merge(user: current_user)
-   end
+  end
 end
