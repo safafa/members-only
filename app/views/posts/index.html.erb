@@ -1,7 +1,13 @@
-<h1>Posts#:index</h1>
+<h1>Posts</h1>
 <ul>
 <% array_posts = @posts.each do |post| %>
-  <li><%= post.title %></li>
+  <li><h6><%= post.title  %></h6>
+  <p>
+  <%= post.body  %> </P>
+  <% if  user_signed_in? %>
+  <%= post.user.email%>
+  <% end %>
+  </li>
 <% end %>
 </ul>
 <%= link_to "Create New", new_post_path %>
