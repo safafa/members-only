@@ -1,9 +1,10 @@
 ## Members only Project
 
-    This project puts our knowledge of users' authentication, authorization, and sessions using the Devise gem. It is an application where a user can create a user and edit it.
+    This project puts our knowledge of users' authentication, authorization, and sessions using the Devise gem. It is an application where a user can create a post and only the authenticated users can see who's the author.
 
 Additional description Odin Project
-Built With
+
+## Built With
 
     Ruby on Rails
 
